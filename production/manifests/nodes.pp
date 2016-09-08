@@ -1,8 +1,13 @@
 node 'centos.sai.com' {
 
 
+
+
 file { '/tmp/demo2':
         content=>'created node.pp !!'
+}
+file { '/tmp/newdemo':
+        content=>' now created node.pp !!'
 }
 package { 'git':
   ensure => present,}
